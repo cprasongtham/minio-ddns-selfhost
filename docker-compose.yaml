@@ -9,7 +9,7 @@ services:
     hostname: minio
     restart: always
     volumes:
-      - './minio/data:/data'
+      - './minio/data:/bitnami/minio/data'
     environment:
       - MINIO_ROOT_USER=admin
       - MINIO_ROOT_PASSWORD=gfkgvkgft

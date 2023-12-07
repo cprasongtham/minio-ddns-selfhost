@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 # Updating the packages and installing dependencies.
 RUN apt-get update \  
-&& apt-get install unzip cron vim curl -y
+&& apt-get install unzip cron vim curl dnsutils -y
 
 
 # Crontab file copied to cron.d directory.
