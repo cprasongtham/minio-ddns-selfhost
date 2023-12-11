@@ -31,7 +31,7 @@ kubectl create ns minio
 kubectl create secret generic minio-root-credential \
   --namespace=minio \
   --from-literal=root-user=admin \
-  --from-literal=root-password=gfkgvkgft
+  --from-literal=root-password=test
 
 kubectl apply -f minio/pesistence.yaml -n minio
 
