@@ -1,2 +1,2 @@
-certbot/conf
-minio/data
+minio-data
+docker-compose
