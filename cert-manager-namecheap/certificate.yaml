@@ -11,6 +11,4 @@ spec:
     name: letsencrypt-stage
   dnsNames:
   - "dev.file.hosting.jumpai.tech"
-  secretTemplate:
-    annotations:
-      kubed.appscode.com/sync: "true"
+  - "dev.file-console.hosting.jumpai.tech"
