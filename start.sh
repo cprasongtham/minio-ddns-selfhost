@@ -15,9 +15,9 @@ helm install \
   --set installCRDs=true
 
 
-# helm install -n cert-manager namecheap-webhook cert-manager-webhook-namecheap/deploy/cert-manager-webhook-namecheap/
+# helm install -n cert-manager namecheap-webhook cert-manager-namecheap/deploy/cert-manager-namecheap/
 
-# helm install --set email=cprasonghtam@snaplogic.com -n cert-manager letsencrypt-namecheap-issuer cert-manager-webhook-namecheap/deploy/letsencrypt-namecheap-issuer/
+# helm install --set email=cprasonghtam@snaplogic.com -n cert-manager letsencrypt-namecheap-issuer cert-manager-namecheap/deploy/letsencrypt-namecheap-issuer/
 
 kubectl create secret generic namecheap-credentials \
   --namespace=cert-manager \
@@ -26,7 +26,7 @@ kubectl create secret generic namecheap-credentials \
 
 
 kubectl create ns minio
-# kubectl apply -f cert-manager-webhook-namecheap/certificate.yaml
+# kubectl apply -f cert-manager-namecheap/certificate.yaml
 
 kubectl create secret generic minio-root-credential \
   --namespace=minio \
