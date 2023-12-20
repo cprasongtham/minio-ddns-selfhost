@@ -1,0 +1,1 @@
+docker run -it --rm -v .\nginx\certs:/etc/letsencrypt/live/file.hosting.jumpai.tech certbot/certbot  certonly --manual --preferred-challenges dns -d "*.file.hosting.jumpai.tech"
